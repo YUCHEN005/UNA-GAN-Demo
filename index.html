@@ -47,7 +47,7 @@
         <div class="row align-items-center">
           <div class="col-md-12">
             <h1><a class="text-light"
-                href="">Noise-robust Speech Recognition with 10 Minutes Unparalleled In-domain Data</a></h1>
+                href="">Unsupervised Noise adaptation using Data Simulation</a></h1>
             <p>
               <div class="row">
                 <div class="col-md col-sm-12"><a class="text-light"
@@ -83,12 +83,10 @@
 <!--      <hr>-->
       <div class="row" id="monolingual">
         <div class="col">
-          <h2>Noise-robust Speech Recognition with 10 Minutes Unparalleled In-domain Data</h2>
+          <h2>Unsupervised Noise adaptation using Data Simulation</h2>
           <div>
-            <p> Noise-robust speech recognition systems require large amounts of training data including noisy speech data and corresponding transcripts to achieve state-of-the-art performances in face of various practical environments.
-              However, such plenty of in-domain data is not always available in the real-life world. In this paper, we propose a generative adversarial network to simulate noisy spectrum from the clean spectrum (Simu-GAN),
-              where only 10 minutes of unparalleled in-domain noisy speech data is required as labels. Furthermore, we also propose a dual-path speech recognition system to improve the robustness of the system under noisy conditions.
-              Experimental results show that the proposed speech recognition system achieves 7.3% absolute improvement with simulated noisy data by Simu-GAN over the best baseline in terms of word error rate (WER).
+            <p> Deep neural network based speech enhancement approaches aim to learn a noisy-to-clean transformation using a supervised learning paradigm. However, such a trained-well transformation is vulnerable to unseen noises that are not included in training set.
+              In this work, we focus on the unsupervised noise adaptation problem in speech enhancement, where the ground truth of target domain data is completely unavailable. Specifically, we propose a generative adversarial network based method to efficiently learn a converse clean-to-noisy transformation using a few minutes of unpaired target domain data. Then this transformation is utilized to generate sufficient simulated data for domain adaptation of the enhancement model. Experimental results show that our method effectively mitigates the domain mismatch between training and test sets, and surpasses the best baseline by a large margin. 
           </div>
         </div>
       </div>
